@@ -3,9 +3,11 @@ include recipes-core/images/core-image-minimal.bb
 IMAGE_FSTYPES = "tar.gz"
 
 IMAGE_INSTALL_append += " \
+	curl \
 	fbcp \
 	fontconfig \
 	fontconfig-utils \
+	jq \
 	sthttpd \
 	tslib-calibrate \
 	tslib-tests \
